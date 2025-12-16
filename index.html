@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardian - Parental Control Extension</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .hero img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 20px;
+      opacity: 0.8;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .feature h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #667eea;
+    }
+    .feature p {
+      font-size: 14px;
+      opacity: 0.7;
+      line-height: 1.5;
+    }
+    .cta {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    }
+    .privacy-note {
+      background: rgba(102, 126, 234, 0.1);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .privacy-note h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    .privacy-note p {
+      opacity: 0.8;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      opacity: 0.5;
+      font-size: 14px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+    footer a {
+      color: #667eea;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <img src="icons/icon128.png" alt="Guardian">
+      <h1>Guardian</h1>
+      <p>The privacy-focused parental control extension. Monitor browsing activity and block inappropriate content — all data stays on your local network.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="feature-icon">🛡️</div>
+        <h3>Content Blocking</h3>
+        <p>Block access to inappropriate websites with customizable rules. Protect your children from harmful content.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📊</div>
+        <h3>Activity Monitoring</h3>
+        <p>Review browsing history and understand your child's online activity. Get insights without being intrusive.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">🔒</div>
+        <h3>Privacy First</h3>
+        <p>All data stays on your local network. No cloud servers, no third-party data collection. You're in control.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📝</div>
+        <h3>Access Requests</h3>
+        <p>Children can request access to blocked sites. Parents review and approve from anywhere on the network.</p>
+      </div>
+    </div>
+
+    <div class="privacy-note">
+      <h3>🔐 Your Data Stays Local</h3>
+      <p>Unlike cloud-based solutions, Guardian stores all browsing data on your own computer or local network. We never see your data, and it's never transmitted to external servers.</p>
+    </div>
+
+    <div class="cta">
+      <a href="https://chrome.google.com/webstore/detail/guardian" class="btn">Install from Chrome Web Store</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="privacy.html">Privacy Policy</a> · 
+      <a href="support.html">Support</a> · 
+      <a href="https://github.com/jptechsols-commits">GitHub</a>
+    </p>
+    <p style="margin-top: 10px;">© 2025 Guardian. All rights reserved.</p>
+  </footer>
+</body>
+</html>

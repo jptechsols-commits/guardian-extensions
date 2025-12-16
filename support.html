@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support - Guardian</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      min-height: 100vh;
+      color: white;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #667eea;
+    }
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      margin-bottom: 15px;
+      color: #667eea;
+    }
+    p, li {
+      font-size: 16px;
+      line-height: 1.7;
+      opacity: 0.85;
+      margin-bottom: 15px;
+    }
+    ul, ol {
+      margin-left: 25px;
+      margin-bottom: 15px;
+    }
+    a {
+      color: #667eea;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 30px;
+      color: #667eea;
+      text-decoration: none;
+    }
+    .faq-item {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+    .faq-item h3 {
+      color: #667eea;
+      margin-bottom: 10px;
+    }
+    .contact-card {
+      background: rgba(102, 126, 234, 0.1);
+      border: 1px solid rgba(102, 126, 234, 0.3);
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 30px;
+    }
+    .contact-card h3 {
+      color: #667eea;
+      margin-bottom: 15px;
+    }
+    code {
+      background: rgba(255,255,255,0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    
+    <h1>Support</h1>
+    <p>Need help with Guardian? You're in the right place.</p>
+
+    <h2>Getting Started</h2>
+    <ol>
+      <li><strong>Install Guardian Agent:</strong> Download and run the Guardian Edge Agent installer on your Windows computer.</li>
+      <li><strong>Install Extension:</strong> The extension will be automatically installed via Chrome policies, or install from Chrome Web Store.</li>
+      <li><strong>Verify Connection:</strong> Click the Guardian icon in your browser toolbar. Status should show "Connected".</li>
+    </ol>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h3>The extension shows "Disconnected" status</h3>
+      <p>This means the Guardian Agent service isn't running. Open Windows Services (services.msc) and start "Guardian Edge Agent Service". The extension connects to <code>http://127.0.0.1:18181</code>.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Blocked pages aren't working</h3>
+      <p>Check that policies have synced by clicking "Sync Policies" in the extension popup. Verify the agent is serving rules at <code>http://127.0.0.1:18181/v1/policy/rules</code>.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I add blocking rules?</h3>
+      <p>Blocking rules are managed through the Guardian Agent, not the extension. The extension fetches and enforces rules from your local agent.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Is my browsing data sent to the cloud?</h3>
+      <p>No. All data is stored locally on your computer or local network. Nothing is ever sent to external servers.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>How do I uninstall?</h3>
+      <p>Run the uninstaller from Windows Add/Remove Programs, or run <code>Uninstall.exe</code> from the Guardian installation directory.</p>
+    </div>
+
+    <div class="faq-item">
+      <h3>Does it work on Edge and Brave?</h3>
+      <p>Yes! Guardian supports Chrome, Microsoft Edge, and Brave browsers. The installer configures policies for all three.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>Still Need Help?</h3>
+      <p>If you can't find an answer above, reach out:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:jptechsols@gmail.com">jptechsols@gmail.com</a></li>
+        <li><strong>GitHub Issues:</strong> <a href="https://github.com/jptechsols-commits">github.com/jptechsols-commits</a></li>
+      </ul>
+      <p>Please include your Guardian version, browser name/version, and a description of the issue.</p>
+    </div>
+  </div>
+</body>
+</html>
